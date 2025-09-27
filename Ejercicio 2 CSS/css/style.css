@@ -1,0 +1,179 @@
+/* ====== Estilos generales ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #fafafa;
+}
+
+/* ====== Cabecera ====== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004d40;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header img {
+  border-radius: 50%;
+}
+
+/* ====== Menú lateral ====== */
+nav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #e0f2f1;
+  padding: 15px;
+  overflow-y: auto;
+  border-right: 2px solid #004d40;
+}
+
+nav h3 {
+  color: #004d40;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #004d40;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00796b;
+}
+
+/* ====== Contenido principal ====== */
+main {
+  margin-left: 220px;
+  padding: 80px 20px 20px 20px;
+}
+
+span {
+  color: #ffffff;
+}
+
+img {
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ====== Contenedor de países ====== */
+.pais {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Info oculta por defecto */
+.pais .info {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  background: #ffffff;
+  border: 2px solid #004d40;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+  text-align: left;
+}
+
+/* Mostrar la info al pasar el mouse */
+.pais:hover .info {
+  display: block;
+}
+
+/* ====== Sección Datos Generales ====== */
+.datos.generales {
+  background: #f8fafc;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin: 30px auto;
+  max-width: 1100px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Titulares dentro de datos */
+.datos.generales h2 {
+  font-size: 1.6rem;
+  color: #1f2937;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 5px solid #2563eb;
+}
+
+/* Párrafos dentro de datos */
+.datos.generales p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Lista de objetivos */
+.datos.generales ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.datos.generales ul li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.datos.generales ul li::before {
+  content: "✔";
+  color: #16a34a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Enlaces de Wikipedia */
+.datos.generales .enlaces_wiki ul li a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.datos.generales .enlaces_wiki ul li a:hover {
+  color: #1d4ed8;
+  transform: translateX(4px);
+}
