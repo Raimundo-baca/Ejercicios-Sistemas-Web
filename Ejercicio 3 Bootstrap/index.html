@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raimundo's Bizarre Adventures</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Hero con degradado más sutil */
+    .hero {
+      background: linear-gradient(180deg, rgba(2,6,23,0.8), rgba(8,200,230,0.6)),
+        url('https://via.placeholder.com/1400x500') center/cover no-repeat;
+      color: white;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.4);
+    }
+    /* Carrusel con altura limitada */
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: cover;
+    }
+    /* Cards con bordes más suaves */
+    .card {
+      border-radius: 1rem;
+    }
+    .card-body {
+      font-size: 0.95rem;
+    }
+    /* Footer elegante */
+    footer {
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Raimundo's Bizarre Adventures</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#logros">Logros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Colaboradores</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="inicio" class="hero text-center py-5">
+  <div class="container py-5">
+    <h1 class="display-4 fw-bold">Raimundo Baca Mbang</h1>
+    <p class="lead">Astronauta a tiempo parcial • Libertador amateur del franquismo • Verdadero Creador de DragonBall</p>
+    <p class="fst-italic">Algunos me llaman Héroe, otros su Dios, pero en realidad solo soy un adc plata en LoL</p>
+    <a href="#proyectos" class="btn btn-warning btn-lg mt-3">Algunas de mis creaciones</a>
+  </div>
+</header>
+
+<!-- Sección de Cards -->
+<section id="logros" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Habilidades & Logros</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Descubrí Murcia</h5>
+            <p class="card-text">En mis viajes descubrí un territorio olvidado por los mapas, habitado por una enigmática población conocida como los Murcianos...</p>
+            <a href="#carouselProyectos" class="btn btn-outline-primary btn-sm">Ver foto prueba</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Reforma histórica</h5>
+            <p class="card-text">Un día me enfrenté al mismísimo franquismo en un duelo legendario. Fue una batalla tan intensa que las leyes del tiempo se fracturaron...</p>
+            <a href="#proyectos" class="btn btn-outline-danger btn-sm">Ver testimonio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-success">Me robaron la idea de DragonBall</h5>
+            <p class="card-text">Una vez me perdí en Japón y me encontré con un niño que lloraba desconsolado. Para tranquilizarlo, le inventé una historia...</p>
+            <a href="#dragonball" class="btn btn-outline-success btn-sm">Pruebas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Carousel -->
+<section id="proyectos" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Galería</h2>
+    <div id="carouselProyectos" class="carousel slide shadow-sm rounded" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="Lucha contra el franquismo.png" class="d-block w-100 rounded" alt="Duelo">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>Duelo fotográfico</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Descubriendo Murcia.png" class="d-block w-100 rounded" alt="Murcia">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>Descubriendo Murcia</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Dragonball.png" class="d-block w-100 rounded" alt="DragonBall">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>Cómo me robaron la idea de DragonBall</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Tabla -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Colaboradores en mis expediciones</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle shadow-sm rounded">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Fiabilidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td><td>Lionel Messi</td><td>38</td>
+            <td><span class="badge bg-success">10/10 (no falla nada)</span></td>
+          </tr>
+          <tr>
+            <td>1</td><td>Pedro Varona</td><td>21</td>
+            <td><span class="badge bg-success">9/10</span></td>
+          </tr>
+          <tr>
+            <td>3</td><td>Ignacio Arvilla</td><td>21</td>
+            <td><span class="badge bg-warning text-dark">5/10 (se la pasa llorando)</span></td>
+          </tr>
+          <tr>
+            <td>4</td><td>Franceses</td><td>---</td>
+            <td><span class="badge bg-danger">0/10 Nunca fiarse</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div id="alertPlaceholder"></div>
+        <form id="contactForm" class="shadow-sm p-4 bg-white rounded">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre o apodo</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-4">
+  <div class="container">
+    <small>&copy; Raimundo's Bizarre Adventures - Todo lo que cuenta es 100% real no fake</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function(){
+    const form = document.getElementById('contactForm');
+    const alertPlaceholder = document.getElementById('alertPlaceholder');
+    function showAlert(message, type) {
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible fade show mt-3" role="alert">`,
+        `  <div>${message}</div>`,
+        '  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        `</div>`
+      ].join('');
+      alertPlaceholder.append(wrapper);
+    }
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      showAlert('¡Mensaje enviado con éxito! Gracias por contactar al héroe.', 'success');
+      form.reset();
+    });
+  })();
+</script>
+</body>
+</html>
